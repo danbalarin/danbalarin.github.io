@@ -1,0 +1,56 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+
+.wrapper {
+    background-color: $white;
+    width: 100%;
+    min-height: 100%;
+    padding: 50px 0;
+}
+
+.bg {
+    position: fixed !important;
+    top: 0;
+}
+
+.container {
+    background-color: $white;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+    z-index: 10;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    @include mq('phone') {
+        width: auto;
+    }
+    @include mq('tablet') {
+        width: 750px;
+    }
+    @include mq('tablet-wide') {
+        width: 970px;
+    }
+    @include mq('desktop') {
+        width: 1170px;
+    }
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: absolute;
+    font-size: 22px;
+    z-index: 100;
+    width: 100%;
+    a {
+        margin: 5px;
+    }
+    a:link, a:visited {
+        text-decoration: none;
+        color: inherit;
+    }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "danbalarin.github.io",
+  "version": "1.0.0",
+  "description": "Personal page of mine",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danbalarin/danbalarin.github.io.git"
+  },
+  "author": "Dan Balarin <dan.balarin@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danbalarin/danbalarin.github.io/issues"
+  },
+  "homepage": "https://github.com/danbalarin/danbalarin.github.io#readme",
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "next": "^8.0.4",
+    "node-sass": "^4.11.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-markdown": "^4.0.6",
+    "trianglify": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-plugin-root-import": "^6.1.0"
+  }
+}

@@ -1,0 +1,47 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.loading {
+    margin: 80px auto;
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: absolute;
+    font-size: 22px;
+    width: 100%;
+    a {
+        margin: 5px;
+    }
+    a:link, a:visited {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.cv {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: $black;
+    font-size: 20px;
+    margin: 50px 70px;
+    a:visited, a:link, a>em {
+        color: inherit;
+        text-decoration: none;
+        font-style: normal;
+    }
+    a:link {
+        text-decoration: underline;
+    }
+}
