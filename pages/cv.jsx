@@ -18,7 +18,7 @@ class CV extends Component {
                 <div className={styles.container}>
                     <div className={styles.controls}>
                         <Link href={"/"} ><a title={"Home"}><i className={'icon-home'} /></a></Link>
-                        <Link href={"cv-printable"} ><a title={"Printable version"}><i className={'icon-print'} /></a></Link>
+                        <Link href={"/cv-printable"} ><a title={"Printable version"}><i className={'icon-print'} /></a></Link>
                         <a href={cvUrl} title={"Download MD file of this CV"} download><i className={'icon-file-code'} /></a>
                         <a href="./" onClick={e => this.child.loadMD(e)} title={"Reload CV"}><i className={'icon-cw'} /></a>
                     </div>
