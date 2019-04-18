@@ -4,7 +4,7 @@
 
 ## Contacts
  - Tel: +420 733 296 960
- - E-mail: dan.balarin@gmail.com
+ - E-mail: [dan.balarin@gmail.com](mailto:dan.balarin@gmail.com)
  - Web: [danbalarin.github.io](https://danbalarin.github.io)
  - Github: [github.com/danbalarin](https://github.com/danbalarin)
 
