@@ -1,17 +1,23 @@
 # Dan Balarin
+
 ![alt text](https://avatars2.githubusercontent.com/u/8071168?s=460&v=4 "Dan Balarin")
+
+## Contacts
+ - Tel: +420 733 296 960
+ - E-mail: dan.balarin@gmail.com
+ - Web: [danbalarin.github.io](https://danbalarin.github.io)
+ - Github: [github.com/danbalarin](https://github.com/danbalarin)
 
 ## About me
 I’m a 22 years old student/front-end developer located in Prague. I’m interested in 3D printing, IoT and Smart{Homes|Wearables} and web application development. I recently began learning React, Redux, and GraphQL and made several applications with it.
 
 ## Education
-  - **Information Technology - High school**
-    - [*Střední průmyslová škola, Mladá Boleslav*](https://www.spsmb.cz/english-version/)
-    - 2012-2016
-
   - **Software engineering - Bacheleors degree**
     - [*CTU in Prague, Faculty of Information Technology*](https://fit.cvut.cz/en)
     - 2016-present
+  - **Information Technology - High school**
+    - [*Střední průmyslová škola, Mladá Boleslav*](https://www.spsmb.cz/english-version/)
+    - 2012-2016
 
 ## Languages
   - Czech - Native speaker
