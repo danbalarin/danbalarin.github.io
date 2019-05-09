@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin master"
+    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin master",
+    "deploy-windows": "next build && next export && type nul > out\\.nojekyll && git add out\\ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin master"
   },
   "repository": {
     "type": "git",
