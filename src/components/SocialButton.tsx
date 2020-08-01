@@ -5,6 +5,7 @@ import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
 
 const Wrapper = styled.a`
 	color: var(--primary);
+	position: relative;
 	text-decoration: none;
 	display: flex;
 	flex-direction: column;
@@ -12,19 +13,29 @@ const Wrapper = styled.a`
 	align-items: center;
 	padding: 4px 10px;
 
-	&:hover {
-		/* background: linear-gradient(transparent, var(--secondary)); */
-		/* border: 4px solid var(--primary); */
+	&:after {
+		transition: all 0.3s ease-in-out;
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		height: 4px;
+		width: 0%;
+		background: var(--primary);
 	}
 
-	/* padding-bottom: 4px; */
-	border-bottom: 4px solid var(--primary);
+	&:hover {
+		&:after {
+			width: 100%;
+			left: 0%;
+		}
+	}
+
 	& > svg {
 		font-size: 3em;
 	}
 
 	& > span {
-		/* padding-top: 4px; */
 		font-size: 1em;
 	}
 `;
