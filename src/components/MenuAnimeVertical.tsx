@@ -160,6 +160,7 @@ const MenuItem = styled.a<{ active: boolean; count: number; index: number }>`
 	position: relative;
 	vertical-align: center;
 	font-size: 1.5em;
+	cursor: pointer;
 
 	color: var(--white);
 	padding: var(--menu-item-padding);

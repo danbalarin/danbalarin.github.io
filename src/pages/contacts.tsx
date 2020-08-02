@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 export default function Contacts() {
 	return (
 		<div id="contacts">
-			<MonoText text="<Contacts>" indentation={-1} />
+			<MonoText text="<Contacts>" indentation={0} />
 			<br />
 			<Wrapper>
 				<SocialButton
@@ -37,7 +37,7 @@ export default function Contacts() {
 				/>
 			</Wrapper>
 			<br />
-			<MonoText text="</Contacts>" indentation={-1} />
+			<MonoText text="</Contacts>" indentation={0} />
 		</div>
 	);
 }

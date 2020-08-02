@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 
 import Shape from './Shape';
 
+const SHAPES_PER_LAYER = 15;
 const PARALLAX_MAX = 50;
 const PARALLAX_LAYER_DIFFERENCE = 0.5;
 
@@ -36,9 +37,9 @@ const Wrapper = styled.div`
 const ParallaxBackground = ({}) => {
 	return (
 		<Wrapper>
-			<ParallaxLayer order={0} count={20} />
-			<ParallaxLayer order={1} count={20} />
-			<ParallaxLayer order={2} count={20} />
+			<ParallaxLayer order={0} count={SHAPES_PER_LAYER} />
+			<ParallaxLayer order={1} count={SHAPES_PER_LAYER} />
+			<ParallaxLayer order={2} count={SHAPES_PER_LAYER} />
 		</Wrapper>
 	);
 };

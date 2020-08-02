@@ -32,7 +32,7 @@ const HeadingWrapper = styled.div`
 const AboutMe = () => {
 	return (
 		<div id="about-me">
-			<MonoText text="<AboutMe>" indentation={-1} />
+			<MonoText text="<AboutMe>" indentation={0} />
 			<HeadingWrapper>
 				<ImageWrapper>
 					<ImageBorder>
@@ -46,7 +46,7 @@ const AboutMe = () => {
 				<FuzzyWord word="DB" />
 			</LogoWrapper>
 
-			<MonoText text="</AboutMe>" indentation={-1} />
+			<MonoText text="</AboutMe>" indentation={0} />
 		</div>
 	);
 };

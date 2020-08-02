@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 
 import ImageBorder from './ImageBorder';
 import Badge from './Badge';
+import { mq } from '../utils';
 
 const ImageColumn = styled.div`
 	display: flex;
@@ -32,6 +33,7 @@ const Wrapper = styled.div<{ right?: boolean }>`
 	flex-direction: ${props => (props.right ? 'row-reverse' : 'row')};
 	margin-bottom: 20px;
 	font-weight: lighter;
+
 	& > ${TextColumn} {
 		width: 60%;
 		align-items: ${props => (props.right ? 'flex-end' : 'flex-start')};
@@ -47,15 +49,34 @@ const Wrapper = styled.div<{ right?: boolean }>`
 				color: var(--primary);
 				font-size: 16pt;
 			}
+			${mq[1]} {
+				width: 100%;
+			}
+		}
+		${mq[0]} {
+			width: 100%;
+			align-items: flex-start;
+			margin: 0;
 		}
 	}
+
 	& > ${ImageColumn} {
 		width: 40%;
+		${mq[0]} {
+			width: 100%;
+		}
+	}
+
+	${mq[0]} {
+		flex-direction: column;
 	}
 `;
 
 const AlignedH2 = styled.h2<{ right?: boolean }>`
 	text-align: ${props => (props.right ? 'end' : 'start')};
+	${mq[0]} {
+		text-align: start;
+	}
 `;
 
 interface ProjectProps {

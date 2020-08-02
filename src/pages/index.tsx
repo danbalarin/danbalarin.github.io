@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-
+import styled from '@emotion/styled';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
 	faHome,
@@ -21,6 +21,10 @@ import Contacts from './contacts';
 
 import './index.css';
 
+const Section = styled.div`
+	padding: 0 2vw;
+`;
+
 library.add(
 	faHome,
 	faUser,
@@ -40,11 +44,17 @@ const IndexPage = () => {
 	return (
 		<Layout>
 			<SEO title="Home" />
-			<MonoText text="<body>" indentation={-2} />
-			<AboutMe />
-			<Projects />
-			<Contacts />
-			<MonoText text="</body>" indentation={-2} />
+			<MonoText text="<body>" indentation={0} />
+			<Section>
+				<AboutMe />
+			</Section>
+			<Section>
+				<Projects />
+			</Section>
+			<Section>
+				<Contacts />
+			</Section>
+			<MonoText text="</body>" indentation={0} />
 		</Layout>
 	);
 };

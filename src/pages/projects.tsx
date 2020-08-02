@@ -10,7 +10,7 @@ const Wrapper = styled.div``;
 export default function Projects() {
 	return (
 		<div id="projects">
-			<MonoText text="<Projects>" indentation={-1} />
+			<MonoText text="<Projects>" indentation={0} />
 			<Project
 				image={<SmartPubPic />}
 				heading="Smart Pub"
@@ -65,7 +65,7 @@ export default function Projects() {
 					domains.
 				</p>
 			</Project>
-			<MonoText text="</Projects>" indentation={-1} />
+			<MonoText text="</Projects>" indentation={0} />
 		</div>
 	);
 }
