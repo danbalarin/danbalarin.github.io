@@ -1,0 +1,75 @@
+@import url('https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/firacode/5.2.0/fira_code.css');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400'); */
+
+:root {
+	--menu-border-radius: 10px;
+	--menu-item-padding: 18px;
+	--icon-size: 25px;
+
+	--font: 'GothamPro', sans-serif;
+	--font-mono: 'Fira Code', sans-serif;
+
+	--white: #eeeeee;
+	--gray: #151515;
+	--primary: #db5461;
+	--secondary: #ffc857;
+	--mono-text-color: rgba(255, 255, 255, 0.4);
+	--bp-mobile-max: 640px;
+	--bp-tablet-max: 780px;
+}
+
+body.light {
+	--gray: #eeeeee;
+	--white: #151515;
+	--primary: #db5461;
+	--secondary: #ffc857;
+	--mono-text-color: rgba(0, 0, 0, 0.4);
+}
+
+h1,
+h2,
+h3 {
+	color: var(--primary) !important;
+	font-family: var(--font);
+}
+
+body,
+#___gatsby {
+	background-color: var(--gray);
+	color: var(--white);
+	height: 100%;
+	width: 100%;
+	font-family: var(--font);
+	/* font-family: 'Montserrat', sans-serif; */
+	/* font-family: 'Poppins', sans-serif; */
+	scroll-behavior: smooth;
+}
+
+html {
+	min-height: 100%;
+	width: 100%;
+	position: relative;
+}
+#gatsby-focus-wrapper,
+main {
+	height: 100%;
+	width: 100%;
+}
+
+main {
+	padding-left: 1vw;
+	padding-right: 1vw;
+	padding-top: 1vw;
+}
+
+p {
+	text-align: left;
+	font-size: 14pt;
+}
+
+p::first-letter {
+	font-weight: bold;
+	color: var(--primary);
+	font-size: 16pt;
+}
