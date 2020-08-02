@@ -113,7 +113,7 @@ const ParallaxLayer = ({ order, count }: ParallaxLayer) => {
 
 	return (
 		<div
-			onMouseMove={onMouseMove}
+			// onMouseMove={onMouseMove}
 			style={{ transform: `translate(${layerX}px, ${layerY}px)` }}
 		>
 			{shapes.map(({ x, y, rotation, ...shapeProps }, i) => (
