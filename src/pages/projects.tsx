@@ -3,7 +3,9 @@ import styled from '@emotion/styled';
 
 import Project from '../components/Project';
 import MonoText from '../components/MonoText';
-import SmartPubPic from '../components/images/SmartPub';
+import RechargingPic from '../components/images/Recharging';
+import UlsPic from '../components/images/Uls';
+import CherryPic from '../components/images/Cherry';
 
 const Wrapper = styled.div``;
 
@@ -12,7 +14,7 @@ export default function Projects() {
 		<div id="projects">
 			<MonoText text="<Projects>" indentation={0} />
 			<Project
-				image={<SmartPubPic />}
+				image={<RechargingPic />}
 				heading="Smart Pub"
 				badges={['React', 'Redux', 'Redux Thunk', 'REST']}
 			>
@@ -30,7 +32,7 @@ export default function Projects() {
 				</p>
 			</Project>
 			<Project
-				image={<SmartPubPic />}
+				image={<CherryPic />}
 				heading="Barmans cheatsheet"
 				badges={['React', 'REST']}
 				right={true}
@@ -42,7 +44,7 @@ export default function Projects() {
 				</p>
 			</Project>
 			<Project
-				image={<SmartPubPic />}
+				image={<UlsPic />}
 				heading="Ukulele learning site"
 				badges={[
 					'React',
